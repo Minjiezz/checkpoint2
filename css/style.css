@@ -40,6 +40,11 @@ img{
     margin: 10px;
 	border: 1.5px solid rgb(0, 0, 0);
 	border-radius: 1px;
+	/* transition-property: box-shadow, border;
+	transition-timing-function: ease-out;
+  	transition-duration: 500ms; */
+	/* transition-delay: 250ms; */
+	transition: all 400ms ease-out 0.2s;
 }
 
 /*Make the h2 heading match h1*/
@@ -96,8 +101,11 @@ a{
 }
 
 img:hover{
-	filter: drop-shadow(0 0 0.75rem rgb(184, 184, 184));
-	transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+	/* filter: drop-shadow(0 0 1rem rgb(184, 184, 184)); */
+	/* transform: scale(1.05); */
+	/* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+	box-shadow: 10px 10px 0px rgb(175, 226, 255);
+	border: 3px solid rgb(67, 138, 243);
 }
 
 .active a{
