@@ -100,7 +100,7 @@ a{
 	color:black
 }
 
-img:hover{
+img:hover:nth-child(2n+1){
 	/* filter: drop-shadow(0 0 1rem rgb(184, 184, 184)); */
 	/* transform: scale(1.05); */
 	/* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
@@ -108,9 +108,20 @@ img:hover{
 	border: 3px solid rgb(67, 138, 243);
 }
 
+img:hover:nth-child(2n){
+	/* filter: drop-shadow(0 0 1rem rgb(184, 184, 184)); */
+	/* transform: scale(1.05); */
+	/* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+	box-shadow: 10px 10px 0px rgb(255, 253, 143);
+	border: 3px solid rgb(243, 167, 67);
+}
+
+
+
 .active a{
 	text-decoration: none;
 	text-transform: uppercase;
 	color: rgb(0, 128, 187);
 	font-weight: bolder;
 }
+
